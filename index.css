@@ -1,0 +1,50 @@
+.content {
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;
+    align-items: center;   
+    padding: 150px;
+  }
+  
+  body {
+    background-image: url('https://img.freepik.com/free-vector/sky-background-pastel-paper-cut-design-vector_53876-144660.jpg?w=1800&t=st=1700820129~exp=1700820729~hmac=3a1c079d44a750d97bf77700cfe7acb810849b2f5bda9f8cdd63476d4bbe59d1');
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    padding: 20px; 
+  }
+  
+  .intro {
+    color: blue;
+    font-weight: 1000;
+  }
+  
+  #submit {
+    border-radius: 4px;
+    vertical-align: middle;
+    height: 40px;
+    width: 80px;
+  }
+  
+  /* New CSS for the table */
+  #results {
+    margin-top: 20px; /* Adjust the margin as needed */
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px; /* Adjust the margin as needed */
+  }
+  
+  thead, td {
+    border: 3px solid black;
+    padding: 8px;
+    text-align: center;
+    background-color: white;
+  }
+  
+  thead {
+    background-color: white;
+    font-weight: 700;
+  }
+  

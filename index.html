@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js"></script>
+    <title>Air Quality Checker</title>
+  </head>
+  <body>
+    <div class="content">
+      <h1>Air Quality Checker</h1>
+      <p class="intro">
+        Get real-time, location-based PSI readings and use them to plan your outdoor activities.
+      </p>
+      <form id="myForm" onsubmit="return getPsiReadings()">
+        <p>Location</p>
+        <select name="location" id="location">
+          <option value="north">Ang Mo Kio</option>
+          <option value="central">Balestier</option>
+          <option value="central">Bartley</option>
+          <option value="east">Bedok</option>
+          <option value="central">Bishan</option>
+          <option value="west">Bukit Batok</option>
+          <option value="south">Bukit Merah</option>
+          <option value="west">Bukit Panjang</option>
+          <option value="central">Bukit Timah</option>
+          <option value="central">Bugis</option>
+          <option value="west">Buona Vista</option>
+          <option value="west">Boon Lay</option>
+          <option value="east">Changi</option>
+          <option value="central">Chinatown</option>
+          <option value="west">Choa Chu Kang</option>
+          <option value="central">City Hall</option>
+          <option value="central">Clarke Quay</option>
+          <option value="west">Clementi</option>
+          <option value="central">Geylang</option>
+          <option value="south">HarbourFront</option>
+          <option value="north">Hougang</option>
+          <option value="west">Jurong East</option>
+          <option value="west">Jurong West</option>
+          <option value="central">Kallang</option>
+          <option value="east">Kembangan</option>
+          <option value="north">Kovan</option>
+          <option value="south">Marina Bay</option>
+          <option value="east">Marine Parade</option>
+          <option value="central">Newton</option>
+          <option value="central">Novena</option>
+          <option value="central">Orchard</option>
+          <option value="east">Pasir Ris</option>
+          <option value="west">Pioneer</option>
+          <option value="north">Punggol</option>
+          <option value="west">Queenstown</option>
+          <option value="north">Sembawang</option>
+          <option value="north">Sengkang</option>
+          <option value="north">Serangoon</option>
+          <option value="east">Tampines</option>
+          <option value="south">Tanjong Pagar</option>
+          <option value="west">Tengah</option>
+          <option value="central">Toa Payoh</option>
+          <option value="central">Tiong Bahru</option>
+          <option value="north">Woodlands</option>
+          <option value="north">Yio Chu Kang</option>
+          <option value="north">Yishun</option>
+        </select>
+
+        <p class="button">
+          <input type="submit" value="Results" id="submit">
+        </p>
+      </form>
+
+      <div id="table" style="display: none;">
+        <table>
+            <thead>
+                <td id="psiReading">PSI = </td>
+                <td>Healthy Persons</td>
+                <td>Elderly, Pregnant Women, Children</td>
+                <td>Persons with Chronic Lung or Heart Disease</td>
+            </thead>
+            
+          <tr id="results">
+            <td id="descPsi"></td>
+            <td id="descHealthy"></td>
+            <td id="descElderly"></td>
+            <td id="descDisease"></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
