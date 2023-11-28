@@ -1,6 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-PWYJG3DPN4"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-PWYJG3DPN4");
+    </script>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
@@ -11,7 +26,8 @@
     <div class="content">
       <h1>Air Quality Checker</h1>
       <p class="intro">
-        Receive updated, real-time PSI readings and activity guidelines based on your location.
+        Receive updated, real-time PSI readings and activity guidelines based on
+        your location.
       </p>
       <form id="myForm" onsubmit="return getPsiReadings()">
         <p>Location</p>
@@ -65,19 +81,19 @@
         </select>
 
         <p class="button">
-          <input type="submit" value="Results" id="submit">
+          <input type="submit" value="Results" id="submit" />
         </p>
       </form>
 
-      <div id="table" style="display: none;">
+      <div id="table" style="display: none">
         <table>
-            <thead>
-                <td id="psiReading">PSI = </td>
-                <td>Healthy Persons</td>
-                <td>Elderly, Pregnant Women, Children</td>
-                <td>Persons with Chronic Lung or Heart Disease</td>
-            </thead>
-            
+          <thead>
+            <td id="psiReading">PSI =</td>
+            <td>Healthy Persons</td>
+            <td>Elderly, Pregnant Women, Children</td>
+            <td>Persons with Chronic Lung or Heart Disease</td>
+          </thead>
+
           <tr id="results">
             <td id="descPsi"></td>
             <td id="descHealthy"></td>
